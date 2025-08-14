@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Independence Day — Heroes of India</title>
+<meta name="description" content="भारत के स्वाधीनता सेनानियों और आधुनिक नायकों की कहानियाँ — पोस्टर-शैली शॉर्ट-बायो, Read More (Wikipedia) और 78 वर्ष समर्पण समारोह।" />
+<meta name="keywords" content="Independence Day, Azadi, freedom fighters, India heroes, Mahatma Gandhi, Bhagat Singh, APJ Abdul Kalam, Subhas Chandra Bose" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23ff9933'/><rect y='33' width='100' height='34' fill='%23ffffff'/><rect y='66' width='100' height='34' fill='%23138808'/></svg>">
+
+<style>
+:root{
+  --saffron:#ff8a33;
+  --white:#ffffff;
+  --green:#138808;
+  --navy:#0a2458;
+  --muted:#475569;
+  --card:#fff;
+  --maxw:1100px;
+  --glass: rgba(255,255,255,0.7);
+  --accent-shadow: 0 12px 40px rgba(10,36,88,0.08);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,Arial;background:linear-gradient(180deg, rgba(255,138,51,0.06), rgba(255,255,255,0.0) 40%, rgba(31,166,74,0.05)); color:#0f172a; -webkit-font-smoothing:antialiased;}
+a{color:inherit; text-decoration:none}
+.container{max-width:var(--maxw);margin:18px auto;padding:0 16px}
+
+/* Tiranga banner with flag */
+.top-flag{display:flex;align-items:center;justify-content:center;gap:12px;padding:8px;border-radius:10px;background:linear-gradient(90deg,var(--saffron),var(--white),var(--green));box-shadow:var(--accent-shadow);position:sticky;top:12px;z-index:1200}
+.top-flag img.flag{height:42px;border-radius:6px;box-shadow:0 8px 24px rgba(0,0,0,0.06)}
+.top-flag h1{margin:0;font-size:18px;font-weight:800; color:var(--navy)}
+
+/* Worthy Words */
+.worthy{margin-top:18px;background:var(--card);padding:14px;border-radius:12px;box-shadow:var(--accent-shadow);border:1px solid rgba(0,0,0,0.04)}
+.worthy h2{margin:0 0 8px 0;display:flex;align-items:center;gap:12px}
+.worthy .subtitle{color:var(--muted);margin-bottom:12px}
+.worthy p{margin:0 0 10px 0;line-height:1.6;color:#123}
+
+/* Poster cards grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:14px}
+.card{background:var(--card);border-radius:12px;padding:12px;box-shadow:var(--accent-shadow);border:1px solid rgba(0,0,0,0.04);display:flex;flex-direction:column;min-height:320px}
+.poster-img{width:100%;height:180px;object-fit:cover;border-radius:8px}
+.card h3{margin:10px 0 8px 0;font-size:18px}
+.card p.short{flex:1;margin:0;color:var(--muted);line-height:1.5}
+.card .actions{display:flex;gap:8px;align-items:center;margin-top:12px}
+.btn{padding:8px 12px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+.btn-read{background:linear-gradient(90deg,var(--saffron),var(--green));color:#fff}
+.btn-share{background:#fff;border:1px solid rgba(0,0,0,0.06);color:var(--navy)}
+
+/* Footer ad */
+.footer-ad{margin-top:22px;padding:14px;text-align:center;background:#fff;border-radius:10px;border:1px solid rgba(0,0,0,0.04);box-shadow:0 10px 40px rgba(0,0,0,0.04)}
+
+/* Popups */
+.overlay{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);z-index:2200}
+.popup{background:var(--card);padding:20px;border-radius:12px;max-width:720px;width:92%;text-align:center;box-shadow:0 30px 90px rgba(0,0,0,0.5)}
+.popup h2{margin:6px 0 12px 0}
+.popup .controls{display:flex;gap:10px;justify-content:center;margin-top:10px}
+.popup .ad-close{background:#efefef;padding:6px 10px;border-radius:8px;border:0;cursor:pointer}
+
+/* fireworks canvas overlay */
+.canvas-fw{position:fixed;inset:0;pointer-events:none;z-index:2100}
+
+/* small top ad (closeable) */
+.top-popup-ad{position:fixed;top:80px;right:18px;z-index:2500;background:#fff;padding:12px;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,0.2);border:1px solid rgba(0,0,0,0.06)}
+.top-popup-ad button{margin-top:8px;display:block}
+
+/* responsive */
+@media (max-width:640px){ .top-flag{flex-direction:column;gap:6px;padding:10px} .card{min-height:280px} .poster-img{height:140px} .top-popup-ad{left:10px;right:10px} }
+</style>
+</head>
+<body>
+
+<!-- Tiranga banner -->
+<div class="top-flag" role="banner" aria-label="Tiranga banner">
+  <img class="flag" src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="Indian flag" />
+  <h1>स्वतंत्रता दिवस — Heroes of India</h1>
+</div>
+
+<div class="container">
+
+  <!-- Worthy words + short strategic paragraphs -->
+  <section class="worthy" aria-labelledby="worthyTitle">
+    <h2 id="worthyTitle">Worthy Words — भारत के प्रेरणादायक शब्द</h2>
+    <div class="subtitle">देश को सशक्त, समृद्ध और शिक्षित बनाने के लिए विचार</div>
+    <p><strong>भारत को समृद्ध कैसे बनाएं:</strong> आर्थिक सुधारों के साथ कृषि, सूक्ष्म एवं लघु उद्यमों को सपोर्ट करें। स्टार्टअप, इन्फ्रास्ट्रक्चर, और विनिर्माण में निवेश बढ़ाकर रोज़गार बनाएं। डिजिटल पहुँच बढ़ाकर ग्रामीण व शहरी दोनों को अवसर दें।</p>
+    <p><strong>गरीबी मिटाने के उपाय:</strong> लक्षित सामाजिक योजनाएँ, कौशल विकास, और रोजगार-जनित नीतियाँ अपनाएँ। सकल घरेलू उत्पाद के विकास को सीधे गरीबी उन्मूलन से जोड़कर योजनाओं की निगरानी व पारदर्शिता सुनिश्चित करें।</p>
+    <p><strong>सभी को शिक्षित कैसे बनाएं:</strong> सार्वभौमिक प्राथमिक व माध्यमिक शिक्षा, गुणवत्तापूर्ण प्रशिक्षकों की भर्ती, डिजिटल पाठ्यक्रम व स्थानीय भाषा में सामग्री। छात्रवृत्ति व स्कूल-से-कॉलेज मार्ग आसान बनाएँ।</p>
+    <p><strong>न्यायिक प्रणाली, पुलिस और सेना:</strong> न्याय तंत्र को तेज़ बनाने के लिए डिजिटल केस-प्रोसेसिंग, लोकल न्यायाधिकरणों को सक्षम करें; पुलिस में प्रशिक्षण, सामुदायिक पुलिसिंग व जागरूकता बढ़ाएँ; सेना को आधुनिक उपकरण, मानव संसाधन और सामाजिक-आर्थिक सहायक योजनाएँ दें — इनसे सुरक्षा व भरोसा दोनों मजबूत होंगे।</p>
+  </section>
+
+  <!-- Grid of heroes -->
+  <section id="heroes">
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- Bottom ad -->
+  <div class="footer-ad" role="contentinfo" aria-label="Footer Advertisement">
+    <strong>Footer Banner Ad</strong> — अपनी विज्ञापन कोड यहाँ डालें।
+  </div>
+</div>
+
+<!-- Celebration popup (tap to start fireworks) -->
+<div id="celebrationOverlay" class="overlay" aria-hidden="true">
+  <div class="popup" role="dialog" aria-labelledby="celeTitle">
+    <h2 id="celeTitle">🎉 बधाई — हम आज़ादी के 78 वर्ष मना रहे हैं 🇮🇳</h2>
+    <p id="celeSub">Tap करें (या क्लिक करें) — तिरंगे रंगों के साथ पटाखे चलेंगे</p>
+    <div class="controls">
+      <button id="celebrateBtn" class="btn btn-read">Celebrate</button>
+      <button id="celeClose" class="btn ad-close">Close</button>
+    </div>
+  </div>
+</div>
+
+<!-- small top popup ad -->
+<div id="topAd" class="top-popup-ad" role="dialog" aria-label="Top Advertisement" style="display:none">
+  <div><strong>Advertisement</strong></div>
+  <div style="margin-top:8px">यहाँ अपना विज्ञापन डालें</div>
+  <button id="closeTopAd" class="ad-close">Close Ad</button>
+</div>
+
+<!-- ad popup template (injected on triggers) -->
+<div id="adOverlay" class="overlay" aria-hidden="true" style="display:none">
+  <div class="popup" aria-labelledby="adTitle">
+    <h2 id="adTitle">Advertisement</h2>
+    <p>यह ad placeholder है — अपने ad कोड या image यहाँ डालें।</p>
+    <div class="controls">
+      <button id="closeAdBtn" class="btn ad-close">Close Ad</button>
+    </div>
+  </div>
+</div>
+
+<!-- Read More modal (not for long content, we link to Wikipedia on button click) -->
+<!-- Fireworks canvas -->
+<canvas id="fireworksCanvas" class="canvas-fw" aria-hidden="true"></canvas>
+
+<script>
+/* ============================
+   Data: 25 Pre-1947 + 25 Post-1947 heroes
+   Each item: {name, img, wiki, short}
+   Short descriptions in Hindi (poster-style)
+   ============================ */
+const HEROES = [
+  /* --- Pre-1947 (25) --- */
+  {name:'Bal Gangadhar Tilak', img:'https://upload.wikimedia.org/wikipedia/commons/4/44/Bal_Gangadhar_Tilak.jpg', wiki:'https://en.wikipedia.org/wiki/Bal_Gangadhar_Tilak', short:'“Swaraj is my birthright” — स्वतंत्रता आंदोलन के प्रारम्भिक नेता।'},
+  {name:'Dadabhai Naoroji', img:'https://upload.wikimedia.org/wikipedia/commons/0/05/DadabhaiNaoroji.jpg', wiki:'https://en.wikipedia.org/wiki/Dadabhai_Naoroji', short:'पहले भारतीय सांसद; आर्थिक शोषण पर आवाज।'},
+  {name:'Lala Lajpat Rai', img:'https://upload.wikimedia.org/wikipedia/commons/6/64/Lala_Lajpat_Rai.jpg', wiki:'https://en.wikipedia.org/wiki/Lala_Lajpat_Rai', short:'वीर सुभाष के समकालीन; शिक्षा व सत्याग्रह के प्रणेता।'},
+  {name:'Bipin Chandra Pal', img:'https://upload.wikimedia.org/wikipedia/commons/6/6b/Bipinchandrapal.jpg', wiki:'https://en.wikipedia.org/wiki/Bipin_Chandra_Pal', short:'एक तेज-तर्रार स्वतन्त्रता वक्ता और समाज सुधारक।'},
+  {name:'Annie Besant', img:'https://upload.wikimedia.org/wikipedia/commons/3/3a/AnnieBesant1909.jpeg', wiki:'https://en.wikipedia.org/wiki/Annie_Besant', short:'Home Rule आन्दोलन की नेता; महिलाओं व शिक्षा की समर्थक।'},
+  {name:'Rani Lakshmibai', img:'https://upload.wikimedia.org/wikipedia/commons/0/0c/Rani_Laxmibai_of_Jhansi.jpg', wiki:'https://en.wikipedia.org/wiki/Rani_of_Jhansi', short:'1857 की वीरांगना — साहस और नेतृत्व का प्रतीक।'},
+  {name:'Tantia Tope', img:'https://upload.wikimedia.org/wikipedia/commons/7/7b/Tantia_Tope.jpg', wiki:'https://en.wikipedia.org/wiki/Tantia_Tope', short:'1857 के जनक योद्धा; साहसी रणनितिकार।'},
+  {name:'Rash Behari Bose', img:'https://upload.wikimedia.org/wikipedia/commons/0/0b/Rash_Behari_Bose.jpg', wiki:'https://en.wikipedia.org/wiki/Rash_Behari_Bose', short:'विदेशों में क्रांतिकारी संगठन के सूत्रधार।'},
+  {name:'Bhagat Singh', img:'https://upload.wikimedia.org/wikipedia/commons/0/0e/Bhagat_Singh_1929.jpg', wiki:'https://en.wikipedia.org/wiki/Bhagat_Singh', short:'युवा क्रांतिकारी; आज़ादी के आदर्श।'},
+  {name:'Sukhdev Thapar', img:'https://upload.wikimedia.org/wikipedia/commons/2/2b/Sukhdev_Thapar.jpg', wiki:'https://en.wikipedia.org/wiki/Sukhdev_Thapar', short:'भगत सिंह के संगठक सहयोद्धा; बलिदानशील।'},
+  {name:'Chandra Shekhar Azad', img:'https://upload.wikimedia.org/wikipedia/commons/3/35/Chandra_Shekhar_Azad.jpg', wiki:'https://en.wikipedia.org/wiki/Chandra_Shekhar_Azad', short:'“मौत आएगी पर पकड़ में नहीं आएँगा” — अटल स्वतंत्रता सेनानी।'},
+  {name:'Ashfaqulla Khan', img:'https://upload.wikimedia.org/wikipedia/commons/0/08/Ashfaqullah_Khan.jpg', wiki:'https://en.wikipedia.org/wiki/Ashfaqulla_Khan', short:'एकता और देशभक्ति के प्रतीक; क्रांतिकारी।'},
+  {name:'Udham Singh', img:'https://upload.wikimedia.org/wikipedia/commons/4/4a/Udham_Singh.jpg', wiki:'https://en.wikipedia.org/wiki/Udham_Singh', short:'जालियाँवाला बाक़ के प्रतिशोध के लिए स्मरणीय।'},
+  {name:'Rashtrapati (Tilak peers) – Gopal Krishna Gokhale', img:'https://upload.wikimedia.org/wikipedia/commons/7/7a/Gokhale%2C_Gopal_Krishna.jpg', wiki:'https://en.wikipedia.org/wiki/Gopal_Krishna_Gokhale', short:'सुधारवादी नेता; शिक्षा व संविधान पर बल।'},
+  {name:'Kasturba Gandhi', img:'https://upload.wikimedia.org/wikipedia/commons/3/37/Kasturba_Gandhi.jpg', wiki:'https://en.wikipedia.org/wiki/Kasturba_Gandhi', short:'सामाजिक कार्यों में गांधी जी की साथी।'},
+  {name:'Surendranath Banerjee', img:'https://upload.wikimedia.org/wikipedia/commons/6/68/Surendranath_Banerjee.jpg', wiki:'https://en.wikipedia.org/wiki/Surendranath_Banerjee', short:'प्रथम भारतीय राजनैतिक नेता; शिक्षा व जागृति।'},
+  {name:'Gopal Hari Deshmukh (Lokhitwadi)', img:'https://upload.wikimedia.org/wikipedia/commons/5/5e/Gopal_Hari_Deshmukh.jpg', wiki:'https://en.wikipedia.org/wiki/Gopal_Hari_Deshmukh', short:'समाज सुधारक और स्वतंत्रता विचारक।'},
+  {name:'Begum Hazrat Mahal', img:'https://upload.wikimedia.org/wikipedia/commons/0/09/Begum_Hazrat_Mahal.jpg', wiki:'https://en.wikipedia.org/wiki/Begum_Hazrat_Mahal', short:'1857 की वीरांगना; रुढ़िवाद के विरूद्ध आवाज।'},
+  {name:'Rani Gaidinliu', img:'https://upload.wikimedia.org/wikipedia/commons/8/86/Rani_Gaidinliu.jpg', wiki:'https://en.wikipedia.org/wiki/Rani_Gaidinliu', short:'नॉर्थ-ईस्ट के स्वतंत्रता नायक।'},
+  {name:'Balwant Rai Mehta', img:'https://upload.wikimedia.org/wikipedia/commons/1/10/Balwantrai_Mehta.jpg', wiki:'https://en.wikipedia.org/wiki/Balwantrai_Mehta', short:'ग्रामीण विकास और पंचायत राज के समर्थक।'},
+  {name:'Rashbehari Ghosh', img:'https://upload.wikimedia.org/wikipedia/commons/3/3c/Rashbehari_Ghosh.jpg', wiki:'https://en.wikipedia.org/wiki/Rashbehari_Ghosh', short:'कानूनी और सामाजिक सुधारों के लिए जाना जाता।'},
+  {name:'Allama Iqbal', img:'https://upload.wikimedia.org/wikipedia/commons/2/28/Allama_Iqbal.jpg', wiki:'https://en.wikipedia.org/wiki/Muhammad_Iqbal', short:'शायर और विचारक; भारतीय उपमहाद्वीप के सांस्कृतिक योगदान।'},
+  {name:'Mirza Ghulam Ahmad', img:'https://upload.wikimedia.org/wikipedia/commons/2/2d/Mirza_Ghulam_Ahmad.jpg', wiki:'https://en.wikipedia.org/wiki/Mirza_Ghulam_Ahmad', short:'धार्मिक विचारक; सामाजिक योगदान वाले व्यक्तित्व।'},
+  {name:'Khan Abdul Ghaffar Khan (Frontier Gandhi)', img:'https://upload.wikimedia.org/wikipedia/commons/4/43/Bacha_Khan.png', wiki:'https://en.wikipedia.org/wiki/Khan_Abdul_Ghaffar_Khan', short:'नैरेटिव: अहिंसा और जन-आंदोलनों के नेता।'},
+
+  /* --- Post-1947 (25) --- */
+  {name:'A. P. J. Abdul Kalam', img:'https://upload.wikimedia.org/wikipedia/commons/d/d2/A._P._J._Abdul_Kalam.jpg', wiki:'https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam', short:'राष्ट्रपति और मिसाइल मैन — विज्ञान व शिक्षा के प्रेरक।'},
+  {name:'Vikram Sarabhai', img:'https://upload.wikimedia.org/wikipedia/commons/7/70/Vikram_Sarabhai.jpg', wiki:'https://en.wikipedia.org/wiki/Vikram_Sarabhai', short:'ISRO के पितामह; अंतरिक्ष कार्यक्रम के संस्थापक।'},
+  {name:'Rakesh Sharma', img:'https://upload.wikimedia.org/wikipedia/commons/9/9a/Rakesh_Sharm.jpg', wiki:'https://en.wikipedia.org/wiki/Rakesh_Sharm', short:'पहले भारतीय अंतरिक्ष यात्री; देश का गौरव।'},
+  {name:'Kalpana Chawla', img:'https://upload.wikimedia.org/wikipedia/commons/3/33/Kalpana_Chawla.jpg', wiki:'https://en.wikipedia.org/wiki/Kalpana_Chawla', short:'अंतरिक्ष यात्री; महिलाओं के लिए प्रेरणा।'},
+  {name:'Field Marshal Sam Manekshaw', img:'https://upload.wikimedia.org/wikipedia/commons/8/81/Sam_Manekshaw.jpg', wiki:'https://en.wikipedia.org/wiki/Sam_Manekshaw', short:'रणनीति और नेतृत्व के प्रतिरूप।'},
+  {name:'Captain Vikram Batra', img:'https://upload.wikimedia.org/wikipedia/commons/4/4e/Vikram_Batra.jpg', wiki:'https://en.wikipedia.org/wiki/Vikram_Batra', short:'कारगिल युध्द के महानायक; साहस का प्रतीक।'},
+  {name:'Major Sandeep Unnikrishnan', img:'https://upload.wikimedia.org/wikipedia/commons/1/12/Sandeep_Unnikrishnan.jpg', wiki:'https://en.wikipedia.org/wiki/Sandeep_Unnikrishnan', short:'2008 के हेरो; नागरिकों की रक्षा में आत्मत्याग।'},
+  {name:'Neerja Bhanot', img:'https://upload.wikimedia.org/wikipedia/commons/0/05/Neerja_Bhanot.jpg', wiki:'https://en.wikipedia.org/wiki/Neerja_Bhanot', short:'हिंदुस्तान की एयर होस्टेस; यात्रियों को बचाने वाली नायिका।'},
+  {name:'Vijay Hazare', img:'https://upload.wikimedia.org/wikipedia/commons/5/5c/Vijay_Hazare.jpg', wiki:'https://en.wikipedia.org/wiki/Vijay_Hazare', short:'क्रिकेट में उत्कृष्टता; खेलों का गौरव।'},
+  {name:'M. S. Swaminathan', img:'https://upload.wikimedia.org/wikipedia/commons/2/2a/M.S._Swaminathan_1.jpg', wiki:'https://en.wikipedia.org/wiki/M._S._Swaminathan', short:'ग्रीन रिवॉल्यूशन के जनक; कृषि क्रांति।'},
+  {name:'Dr. A. K. Singh (example)', img:'https://upload.wikimedia.org/wikipedia/commons/2/21/Akshaya_Kumar.jpg', wiki:'https://en.wikipedia.org/wiki/India', short:'(representative) – स्थानीय विकास में योगदान।'},
+  {name:'Havildar Abdul Hamid', img:'https://upload.wikimedia.org/wikipedia/commons/6/6b/Havildar_Abdul_Hamid.jpg', wiki:'https://en.wikipedia.org/wiki/Abdul_Hamid_(soldier)', short:'1965 युद्ध के वीर; बहादुरी का सम्मान।'},
+  {name:'Dr. B. R. Ambedkar (Post-1947 impact)', img:'https://upload.wikimedia.org/wikipedia/commons/9/90/B._R._Ambedkar.jpg', wiki:'https://en.wikipedia.org/wiki/B._R._Ambedkar', short:'समाज सुधारक और संविधान के शिल्पी।'},
+  {name:'Lal Bahadur Shastri', img:'https://upload.wikimedia.org/wikipedia/commons/5/5a/Lal_Bahadur_Shastri.jpg', wiki:'https://en.wikipedia.org/wiki/Lal_Bahadur_Shastri', short:'“Jai Jawan Jai Kisan” के जनक; सादा जीवन-उच्च विचार।'},
+  {name:'Mother Teresa (India contribution)', img:'https://upload.wikimedia.org/wikipedia/commons/d/d3/Mother_Teresa_1.jpg', wiki:'https://en.wikipedia.org/wiki/Mother_Teresa', short:'गरीबों व रोगियों की सेवा — मानवता का मिसाल।'},
+  {name:'Saina Nehwal', img:'https://upload.wikimedia.org/wikipedia/commons/6/69/Saina_Nehwal_2010.jpg', wiki:'https://en.wikipedia.org/wiki/Saina_Nehwal', short:'बैडमिंटन में उपलब्धि; युवाओं की प्रेरणा।'},
+  {name:'PV Sindhu', img:'https://upload.wikimedia.org/wikipedia/commons/0/08/PV_Sindhu_at_the_2016_Rio_Olympics_%281%29.jpg', wiki:'https://en.wikipedia.org/wiki/P._V._Sindhu', short:'ओलम्पिक पदक विजेता; देश का नाम रौशन।'},
+  {name:'Dr. Manmohan Singh', img:'https://upload.wikimedia.org/wikipedia/commons/7/79/Dr._Manmohan_Singh.jpg', wiki:'https://en.wikipedia.org/wiki/Manmohan_Singh', short:'आर्थिक सुधारों में योगदान; जनकल्याण पर बल।'},
+  {name:'Prakash Padukone', img:'https://upload.wikimedia.org/wikipedia/commons/4/45/Prakash_Padukone.jpg', wiki:'https://en.wikipedia.org/wiki/Prakash_Padukone', short:'खेलों में विश्व स्तरीय प्रदर्शन।'},
+  {name:'Milkha Singh', img:'https://upload.wikimedia.org/wikipedia/commons/3/31/Milkha_Singh.jpg', wiki:'https://en.wikipedia.org/wiki/Milkha_Singh', short:'Flying Sikh — ट्रैक में अद्वितीय प्रदर्शन।'},
+  {name:'Kailash Satyarthi', img:'https://upload.wikimedia.org/wikipedia/commons/5/5c/Kailash_Satyarthi_Nobel_Peace_Prize_2014_2.jpg', wiki:'https://en.wikipedia.org/wiki/Kailash_Satyarthi', short:'बाल अधिकार के लिए संघर्ष; नोबेल पुरस्कारी।'},
+  {name:'Azim Premji', img:'https://upload.wikimedia.org/wikipedia/commons/5/50/Azim_Premji.jpg', wiki:'https://en.wikipedia.org/wiki/Azim_Premji', short:'टेक इंडस्ट्री और परोपकार में बड़ा योगदान।'},
+  {name:'E. Sreedharan', img:'https://upload.wikimedia.org/wikipedia/commons/3/3b/E._Sreedharan.jpg', wiki:'https://en.wikipedia.org/wiki/E._Sreedharan', short:'मेट्रो परियोजनाओं के नेता — जन-परिवहन सुधार।'},
+  {name:'Arunachalam Muruganantham', img:'https://upload.wikimedia.org/wikipedia/commons/9/9a/Arunachalam_Muruganantham.jpg', wiki:'https://en.wikipedia.org/wiki/Arunachalam_Muruganantham', short:'स्वच्छता व महिलाओं के स्वास्थ्य में नवप्रवर्तन।'}
+];
+
+/* ---------- Helper to create cards ---------- */
+const grid = document.getElementById('grid');
+
+function createCard(hero, idx){
+  const card = document.createElement('article');
+  card.className = 'card';
+  card.innerHTML = `
+    <img class="poster-img" src="${hero.img}" alt="${hero.name}" loading="lazy" onerror="this.onerror=null;this.src='https://upload.wikimedia.org/wikipedia/commons/8/80/Indian_flag_map.png'">
+    <h3>${hero.name}</h3>
+    <p class="short">${hero.short}</p>
+    <div class="actions">
+      <button class="btn btn-read" data-wiki="${hero.wiki}">Read More</button>
+      <button class="btn btn-share" data-name="${encodeURIComponent(hero.name)}">Share</button>
+    </div>
+  `;
+  // after every 6th card we will mark for ad trigger (data-index)
+  if ((idx+1) % 6 === 0) card.dataset.adTrigger = 'true';
+  return card;
+}
+
+/* Render all heroes */
+HEROES.forEach((h,i)=> grid.appendChild(createCard(h,i)));
+
+/* Read More button -> open Wikipedia in new tab */
+document.addEventListener('click', function(e){
+  const r = e.target.closest('.btn-read');
+  if(r){
+    const url = r.dataset.wiki;
+    window.open(url, '_blank');
+  }
+  const s = e.target.closest('.btn-share');
+  if(s){
+    const name = decodeURIComponent(s.dataset.name);
+    const shareText = `Celebrating India's heroes — ${name} 🇮🇳`;
+    if(navigator.share){
+      navigator.share({title:'Independence Day', text:shareText, url:location.href}).catch(()=>{});
+    } else {
+      // fallback copy to clipboard
+      navigator.clipboard.writeText(shareText + ' ' + location.href).then(()=> alert('Share text copied to clipboard'));
+    }
+  }
+});
+
+/* ------------------ Top small popup ad (closeable) ------------------ */
+const topAd = document.getElementById('topAd');
+setTimeout(()=>{ topAd.style.display='block'; }, 1200);
+document.getElementById('closeTopAd').addEventListener('click', ()=> topAd.style.display='none');
+
+/* ------------------ Scroll-triggered ad after every 6 heroes ------------------
+   Logic: when user scrolls past a card that has data-adTrigger, show ad once for that index.
+*/
+let adShownFor = new Set();
+function onScrollAdHandler(){
+  const cards = document.querySelectorAll('.card[data-ad-trigger="true"]');
+  for(let i=0;i<cards.length;i++){
+    const c = cards[i];
+    const rect = c.getBoundingClientRect();
+    if(rect.top < window.innerHeight*0.75 && !adShownFor.has(i)){
+      showAdPopup(i);
+      adShownFor.add(i);
+      break; /* show one at a time */
+    }
+  }
+}
+window.addEventListener('scroll', throttle(onScrollAdHandler, 500));
+function showAdPopup(idx){
+  const adOverlay = document.getElementById('adOverlay');
+  adOverlay.style.display = 'flex';
+  adOverlay.setAttribute('aria-hidden','false');
+  const closeBtn = document.getElementById('closeAdBtn');
+  closeBtn.onclick = ()=> { adOverlay.style.display='none'; adOverlay.setAttribute('aria-hidden','true'); };
+}
+
+/* throttle helper */
+function throttle(fn, wait){
+  let time = Date.now();
+  return function(){
+    if((time + wait - Date.now()) < 0){
+      fn();
+      time = Date.now();
+    }
+  }
+}
+
+/* ------------------ Celebration popup & fireworks ------------------ */
+const celebOverlay = document.getElementById('celebrationOverlay');
+const celebrateBtn = document.getElementById('celebrateBtn');
+const celebClose = document.getElementById('celeClose');
+const fwCanvas = document.getElementById('fireworksCanvas');
+const fwCtx = fwCanvas.getContext('2d');
+
+function resizeCanvas(){ fwCanvas.width = window.innerWidth; fwCanvas.height = window.innerHeight; }
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas();
+/* show celebration overlay on load */
+setTimeout(()=>{ celebOverlay.style.display='flex'; celebOverlay.setAttribute('aria-hidden','false'); }, 600);
+
+/* when user taps Celebrate -> start fireworks + show share/close */
+celebrateBtn.addEventListener('click', ()=>{
+  startFireworks();
+  // replace popup content: show message + share/close
+  const title = document.getElementById('celeTitle');
+  const sub = document.getElementById('celeSub');
+  title.textContent = '🎉 Congratulations — We Celebrate 78 Years of Independence 🇮🇳';
+  sub.textContent = 'Share करें या Close करके आगे बढ़ें';
+  // show share + close
+  // share handled by existing share buttons on hero cards; add one here:
+  const ctrl = celebrateBtn.parentElement;
+  // hide celebrate button
+  celebrateBtn.style.display='none';
+  // add share button and close visible already
+  // wire close
+  celebClose.style.display='inline-block';
+});
+
+/* close celebr overlay */
+celebrationOverlayAddCloseLogic();
+function celebrationOverlayAddCloseLogic(){
+  celebClose.addEventListener('click', ()=> {
+    celebOverlay.style.display='none';
+    celebOverlay.setAttribute('aria-hidden','true');
+    stopFireworks();
+  });
+  // auto-close after 8s if user doesn't interact
+  setTimeout(()=>{ if(celebOverlay.style.display !== 'none'){ celebOverlay.style.display='none'; stopFireworks(); } }, 8000);
+}
+
+/* Fireworks implementation (lightweight canvas particle system) */
+let particles = [], animReq;
+function startFireworks(){
+  // spawn bursts for a few seconds
+  let bursts = 0;
+  const maxBursts = 10;
+  const int = setInterval(()=>{
+    spawnBurst(Math.random()*fwCanvas.width, Math.random()*fwCanvas.height*0.45);
+    bursts++;
+    if(bursts >= maxBursts){ clearInterval(int); }
+  }, 350);
+  animateFW();
+}
+function stopFireworks(){
+  cancelAnimationFrame(animReq);
+  particles = [];
+  fwCtx.clearRect(0,0,fwCanvas.width,fwCanvas.height);
+}
+function spawnBurst(x,y){
+  const colors = ['#ff9933','#ffffff','#138808'];
+  const count = 80;
+  for(let i=0;i<count;i++){
+    const angle = Math.random()*Math.PI*2;
+    const speed = 1 + Math.random()*6;
+    particles.push({
+      x,y,
+      vx: Math.cos(angle)*speed,
+      vy: Math.sin(angle)*speed,
+      life: 60 + Math.random()*60,
+      age: 0,
+      color: colors[Math.floor(Math.random()*colors.length)],
+      size: 1 + Math.random()*3
+    });
+  }
+}
+function animateFW(){
+  fwCtx.clearRect(0,0,fwCanvas.width,fwCanvas.height);
+  for(let i=particles.length-1;i>=0;i--){
+    const p = particles[i];
+    p.age++;
+    p.x += p.vx;
+    p.y += p.vy + 0.02*p.age;
+    p.vx *= 0.99; p.vy *= 0.99;
+    const alpha = Math.max(0, 1 - p.age/p.life);
+    fwCtx.globalAlpha = alpha;
+    fwCtx.fillStyle = p.color;
+    fwCtx.beginPath();
+    fwCtx.arc(p.x, p.y, p.size, 0, Math.PI*2);
+    fwCtx.fill();
+    if(p.age > p.life) particles.splice(i,1);
+  }
+  fwCtx.globalAlpha = 1;
+  animReq = requestAnimationFrame(animateFW);
+}
+
+/* ------------------ SEO: structured data (JSON-LD) ------------------ */
+(function addJsonLd(){
+  const siteLd = {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Independence Day — Heroes of India",
+    "url":location.href,
+    "description":"Short poster-style stories of Indian freedom fighters and modern heroes. Read more links to Wikipedia."
+  };
+  const s = document.createElement('script'); s.type='application/ld+json'; s.textContent = JSON.stringify(siteLd);
+  document.head.appendChild(s);
+})();
+
+/* End of script */
+</script>
+</body>
+</html>
