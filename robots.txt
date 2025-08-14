@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://samar-saqib.github.io/independence-day/sitemap.xml
